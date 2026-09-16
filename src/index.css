@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #060911;
+    color: #f1f5f9;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Custom scrollbar with aquamarine to lilac gradient */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #080d1a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #00f5d4, #a855f7);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #00f2fe, #c084fc);
+  }
+}
+
+/* Glowing utilities */
+.glow-aqua-border {
+  border-color: rgba(0, 245, 212, 0.3);
+  box-shadow: 0 0 20px -5px rgba(0, 245, 212, 0.25);
+}
+
+.glow-lila-border {
+  border-color: rgba(192, 132, 252, 0.3);
+  box-shadow: 0 0 20px -5px rgba(192, 132, 252, 0.25);
+}
+
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.bg-radial-gradient {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 245, 212, 0.12) 0%, rgba(168, 85, 247, 0.08) 35%, transparent 70%);
+}
+
+.text-gradient-primary {
+  background: linear-gradient(135deg, #00f5d4 0%, #38bdf8 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-aqua {
+  background: linear-gradient(135deg, #00f5d4 0%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-lila {
+  background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-card {
+  background: rgba(13, 19, 38, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-interactive {
+  background: rgba(13, 19, 38, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-interactive:hover {
+  border-color: rgba(0, 245, 212, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px -10px rgba(0, 245, 212, 0.2);
+}
