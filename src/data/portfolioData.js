@@ -182,7 +182,7 @@ export const projects = [
     title: "SlowTetris – Adaptación del Tetris Clásico en Java",
     award: "🎮 Proyecto Universitario Destacado (2025)",
     category: "architecture",
-    featured: false,
+    featured: true,
     period: "2025",
     role: "Desarrollador Principal",
     description: "Adaptación del Tetris clásico desarrollada al 100% en Java puro con Swing, en formato monolítico bajo criterios académicos. Separa la lógica del juego de la interfaz gráfica en dos capas internas: domain (motor, piezas, tablero, colisiones, puntuación) y presentation (GUI Swing, menú animado, música, configuración).",
