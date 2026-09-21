@@ -178,6 +178,25 @@ export const projects = [
     badgeColor: "combo"
   },
   {
+    id: "slow-tetris",
+    title: "SlowTetris – Adaptación del Tetris Clásico en Java",
+    award: "🎮 Proyecto Universitario Destacado (2025)",
+    category: "architecture",
+    featured: false,
+    period: "2025",
+    role: "Desarrollador Principal",
+    description: "Adaptación del Tetris clásico desarrollada al 100% en Java puro con Swing, en formato monolítico bajo criterios académicos. Separa la lógica del juego de la interfaz gráfica en dos capas internas: domain (motor, piezas, tablero, colisiones, puntuación) y presentation (GUI Swing, menú animado, música, configuración).",
+    highlights: [
+      "Arquitectura modular monolítica con separación clara entre domain (motor del juego) y presentation (interfaz Swing).",
+      "Tablero 20×10 con las 7 piezas clásicas (I, O, T, S, Z, J, L) y ciclo de caída base de 500 ms.",
+      "Sistema de puntuación escalonado: 100 pts (1 línea), 300 (2), 500 (3), 800 (4), 1000+ (>4 líneas).",
+      "Sistema HOLD para guardar y reutilizar piezas con restricción de uso por turno, vista previa de siguiente pieza y detección de Game Over."
+    ],
+    tech: ["Java", "Java Swing", "OOP", "Domain-Driven Design", "GUI", "Game Development"],
+    github: "https://github.com/SrDark04/SlowTetris",
+    badgeColor: "lila"
+  },
+  {
     id: "blueprints-jwt",
     title: "BluePrints REST API + JWT Security",
     category: "architecture",
@@ -384,7 +403,7 @@ export const terminalCommands = {
   help: "Comandos disponibles: whoami, skills, projects, certs, cv, arch, contact, clear",
   whoami: "Roger Mauricio Durán Guacaneme - Estudiante de 9º semestre de Ing. de Sistemas en la Escuela Colombiana de Ingeniería. Habilitado para prácticas profesionales.",
   skills: "Backend: Java 21, Spring Boot, Hexagonal, Microservices | Seguridad: Wireshark, Packet Tracer, ML Incident Response | DevOps: Docker, Arch Linux Kernel, GitHub Actions",
-  projects: "1. ZEAL (Arquitectura Hexagonal, 2º Lugar) | 2. DOSW (Microservicios + JWT, 2º Lugar) | 3. IA Network Mitigation | 4. Arch Linux Automation",
+  projects: "1. ZEAL (Arquitectura Hexagonal, 2º Lugar) | 2. DOSW (Microservicios + JWT, 2º Lugar) | 3. IA Network Mitigation | 4. Arch Linux Automation | 5. SlowTetris (Java Swing, Juego Universitario 2025)",
   certs: "Feria Ideas Inspiradoras (2º Lugar), Diplomado Java (Politécnico), Platzi Ing. Software, SIC Datos Personales & Patentes, Cisco Packet Tracer.",
   arch: "OS: Arch Linux x86_64 | Kernel: Linux Custom Tuned | Shell: zsh/bash | WM/DE: High Concurrency Optimized | Uptime: 99.99%",
   contact: "Email: rogermao5.1@gmail.com | Tel: +57 300 247 1343 | LinkedIn: /in/roger-mauricio-duran-guacaneme | GitHub: @SrDark04",
