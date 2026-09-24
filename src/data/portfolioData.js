@@ -291,6 +291,7 @@ export const techSkills = [
     items: [
       { name: "Docker & Compose", level: "Avanzado", icon: "Container", highlight: true },
       { name: "Arch Linux Internals", level: "Avanzado", icon: "Terminal", highlight: true },
+      { name: "Git & GitHub", level: "Avanzado", icon: "GitPullRequest", highlight: true },
       { name: "GitHub Actions CI/CD", level: "Avanzado", icon: "GitPullRequest", highlight: true },
       { name: "Azure DevOps", level: "Intermedio - Alto", icon: "Cloud" },
       { name: "PostgreSQL", level: "Avanzado", icon: "Database" },
@@ -330,6 +331,16 @@ export const certifications = [
     pdf: "/certificates/diploma-ingenieria.pdf",
     description: "Arquitectura de sistemas computacionales, redes, metodologías de ingeniería y buenas prácticas de ingeniería de software.",
     badge: "Ingeniería"
+  },
+  {
+    id: "cert-platzi-git",
+    title: "Curso de Git y GitHub",
+    institution: "Platzi",
+    date: "Sep 2026",
+    category: "desarrollo",
+    pdf: "/certificates/diploma-git-github.pdf",
+    description: "Control de versiones distribuido, flujo de trabajo colaborativo, gestión de ramas, resolución de conflictos, stashing, rebase y Pull Requests en GitHub.",
+    badge: "Control de Versiones"
   },
   {
     id: "cert-platzi-html",
@@ -404,7 +415,7 @@ export const terminalCommands = {
   whoami: "Roger Mauricio Durán Guacaneme - Estudiante de 9º semestre de Ing. de Sistemas en la Escuela Colombiana de Ingeniería. Habilitado para prácticas profesionales.",
   skills: "Backend: Java 21, Spring Boot, Hexagonal, Microservices | Seguridad: Wireshark, Packet Tracer, ML Incident Response | DevOps: Docker, Arch Linux Kernel, GitHub Actions",
   projects: "1. ZEAL (Arquitectura Hexagonal, 2º Lugar) | 2. DOSW (Microservicios + JWT, 2º Lugar) | 3. IA Network Mitigation | 4. Arch Linux Automation | 5. SlowTetris (Java Swing, Juego Universitario 2025)",
-  certs: "Feria Ideas Inspiradoras (2º Lugar), Diplomado Java (Politécnico), Platzi Ing. Software, SIC Datos Personales & Patentes, Cisco Packet Tracer.",
+  certs: "Feria Ideas Inspiradoras (2º Lugar), Diplomado Java (Politécnico), Platzi (Git & GitHub, Ing. Software), SIC Datos Personales & Patentes, Cisco Packet Tracer.",
   arch: "OS: Arch Linux x86_64 | Kernel: Linux Custom Tuned | Shell: zsh/bash | WM/DE: High Concurrency Optimized | Uptime: 99.99%",
   contact: "Email: rogermao5.1@gmail.com | Tel: +57 300 247 1343 | LinkedIn: /in/roger-mauricio-duran-guacaneme | GitHub: @SrDark04",
   cv: "Escribe 'descargar-cv' o haz clic en el botón 'Descargar CV' del menú superior para seleccionar la versión (Arquitectura, Seguridad o DevOps)."
